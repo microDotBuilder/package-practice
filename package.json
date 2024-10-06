@@ -1,19 +1,23 @@
 {
-  "name": "package-practice",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "@micro-builder/package-practice",
+  "version": "0.0.1",
+  "description": "A package for practice",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "dev": "vitest",
     "test": "vitest run",
     "lint": "tsc --noEmit",
-    "ci": "pnpm run lint && pnpm run test && pnpm run build"
+    "ci": "pnpm run lint && pnpm run test && pnpm run build",
+    "release": "pnpm run ci && changeset publish"
   },
   "keywords": [],
   "author": "micro.builder.io",
   "license": "ISC",
   "devDependencies": {
+    "@changesets/cli": "^2.27.9",
     "@types/node": "^20.11.18",
     "tsup": "^8.3.0",
     "typescript": "^5.4.5",
