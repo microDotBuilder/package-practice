@@ -1,5 +1,11 @@
 # @micro-builder/package-practice
 
+## 1.0.4
+
+### Patch Changes
+
+- updated the installation and import in readme.md
+
 ## 1.0.3
 
 ### Patch Changes

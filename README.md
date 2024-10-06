@@ -5,7 +5,7 @@ A simple, colorful logging utility for Node.js applications.
 ## Installation
 
 ```bash
-npm install @micro.builder.io/logger
+npm install @micro-builder/package-practice
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm install @micro.builder.io/logger
 Import the Logger class:
 
 ```typescript
-import { Logger } from "@micro.builder.io/logger";
+import { Logger } from "@micro-builder/package-practice";
 ```
 
 ### Basic Logging
