@@ -1,5 +1,11 @@
 # @micro-builder/package-practice
 
+## 1.0.3
+
+### Patch Changes
+
+- updated the package and readme
+
 ## 1.0.2
 
 ### Patch Changes

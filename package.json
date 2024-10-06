@@ -1,7 +1,11 @@
 {
   "name": "@micro-builder/package-practice",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A package for practice",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/microDotBuilder/package-practice.git"
+  },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "private": false,
