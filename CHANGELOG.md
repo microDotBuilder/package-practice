@@ -1,5 +1,17 @@
 # @micro-builder/package-practice
 
+## 1.0.1
+
+### Patch Changes
+
+- created the test for the changeset
+
+## 1.0.0
+
+### Major Changes
+
+- created the logger
+
 ## 0.1.1
 
 ### Patch Changes
