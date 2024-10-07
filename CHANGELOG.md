@@ -1,5 +1,11 @@
 # @micro-builder/package-practice
 
+## 2.0.0
+
+### Major Changes
+
+- updated the json.strigyfy() to json5.stringyfy()
+
 ## 1.0.4
 
 ### Patch Changes

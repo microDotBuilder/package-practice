@@ -1,4 +1,5 @@
 import chalk from "chalk";
+import JSON5 from "json5";
 
 export class Logger {
   static logg(...message: unknown[]) {
@@ -39,15 +40,21 @@ export class Logger {
     return chalk.green(message);
   }
   static loggJSON(message: object) {
-    console.log(chalk.green(JSON.stringify(message, null, 2)));
+    console.log(chalk.green(JSON5.stringify(message, null, 2)));
   }
   static errorJSON(message: object) {
-    console.log(chalk.red(JSON.stringify(message, null, 2)));
+    console.log(chalk.red(JSON5.stringify(message, null, 2)));
   }
   static infoJSON(message: object) {
-    console.log(chalk.blue(JSON.stringify(message, null, 2)));
+    console.log(chalk.blue(JSON5.stringify(message, null, 2)));
   }
   static warnJSON(message: object) {
-    console.log(chalk.yellow(JSON.stringify(message, null, 2)));
+    console.log(chalk.yellow(JSON5.stringify(message, null, 2)));
+  }
+  static debugJSON(message: object) {
+    console.log(chalk.magenta(JSON5.stringify(message, null, 2)));
+  }
+  static successJSON(message: object) {
+    console.log(chalk.green(JSON5.stringify(message, null, 2)));
   }
 }

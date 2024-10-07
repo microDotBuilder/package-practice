@@ -1,6 +1,7 @@
 import { describe, it, expect, vi } from "vitest";
 import { Logger } from "./index";
 import chalk from "chalk";
+import JSON5 from "json5";
 
 describe("index", () => {
   it("should work", () => {
@@ -71,24 +72,33 @@ describe("Logger", () => {
 
       Logger.loggJSON(testObject);
       expect(consoleSpy).toHaveBeenCalledWith(
-        chalk.green(JSON.stringify(testObject, null, 2))
+        chalk.green(JSON5.stringify(testObject, null, 2))
       );
 
       Logger.errorJSON(testObject);
       expect(consoleSpy).toHaveBeenCalledWith(
-        chalk.red(JSON.stringify(testObject, null, 2))
+        chalk.red(JSON5.stringify(testObject, null, 2))
       );
 
       Logger.infoJSON(testObject);
       expect(consoleSpy).toHaveBeenCalledWith(
-        chalk.blue(JSON.stringify(testObject, null, 2))
+        chalk.blue(JSON5.stringify(testObject, null, 2))
       );
 
       Logger.warnJSON(testObject);
       expect(consoleSpy).toHaveBeenCalledWith(
-        chalk.yellow(JSON.stringify(testObject, null, 2))
+        chalk.yellow(JSON5.stringify(testObject, null, 2))
       );
 
+      Logger.debugJSON(testObject);
+      expect(consoleSpy).toHaveBeenCalledWith(
+        chalk.magenta(JSON5.stringify(testObject, null, 2))
+      );
+
+      Logger.successJSON(testObject);
+      expect(consoleSpy).toHaveBeenCalledWith(
+        chalk.green(JSON5.stringify(testObject, null, 2))
+      );
       consoleSpy.mockRestore();
     });
   });

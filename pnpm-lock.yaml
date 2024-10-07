@@ -8,6 +8,9 @@ dependencies:
   chalk:
     specifier: ^5.3.0
     version: 5.3.0
+  json5:
+    specifier: ^2.2.3
+    version: 2.2.3
 
 devDependencies:
   '@changesets/cli':
@@ -1477,6 +1480,12 @@ packages:
       argparse: 1.0.10
       esprima: 4.0.1
     dev: true
+
+  /json5@2.2.3:
+    resolution: {integrity: sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==}
+    engines: {node: '>=6'}
+    hasBin: true
+    dev: false
 
   /jsonfile@4.0.0:
     resolution: {integrity: sha512-m6F1R3z8jjlf2imQHS2Qez5sjKWQzbuuhuJ/FKYFRZvPE3PuHcSMVZzfsLhGVOkfd20obL5SWEBew5ShlquNxg==}
